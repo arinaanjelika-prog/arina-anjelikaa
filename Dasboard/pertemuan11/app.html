@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrapper">       
         <aside id="sidebar">
-            <div class="sidebar-brand"></div>
+          <div class="sidebar-brand"></div>
             <div class="sidebar-user-profile"></div>
             <ul class="nav sidebar-nav">
                 <li class="nav-item">
@@ -64,10 +64,48 @@
                     </a>
             </ul>
         </aside>
-
-        <div id="content-wrapper"></div>
-
-    </div>
     
+        <div id="content-wrapper">
+          <header id="topbar" class="bg-body-tertiary border-botton">
+            <!-- kiri -->
+            <div class=" d-flex align-items-center gap-3">
+              <button class="border-0 btn btn-outline-secondary">
+                <i class="fa-solid fa-bars fs-5"></i>
+              </button>
+              <h5 class="m-0">Dashboard</h5>
+            </div>
+
+            <!-- kanan -->
+            <div class="d-flex align-items-center gap-3">
+              <!-- tombol theme-->
+              <button class="border-0 btn btn-outline-secondary">
+                <i class="fa-solid fa-moon fs-5" id="themeicon"></i>
+              </button>
+
+              <!-- quick menu-->
+               <div class="dropdown">
+                <button class="btn btn-link text-decoration-none dropdown-toggle text-reset p-0"
+                  data-bs-toggle="dropdown">
+                  <i class="fa-solid fa-circle-user fs-4 align-middle" id="themeicon"></i>
+                </button>
+               
+               <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item"><i class="fa-solid fa-user "></i> Profile</a>
+                  
+                </li>
+               </ul>
+              </div>
+
+            </div>
+          </header>
+        </main>
+      </main>
+      </div>
+
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

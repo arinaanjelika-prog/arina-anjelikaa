@@ -59,3 +59,18 @@ Body {
 .sidebar-nav .nav-link:not(.active):hover .menu-icon {
     transform: rotateY(180deg);
 }
+
+#content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* topbar */
+#topbar {
+    height: var(--topbar-height);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
